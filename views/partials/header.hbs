@@ -1,0 +1,187 @@
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+    <!--<a class="navbar-brand" href="#">Navbar</a>-->
+    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+        <!--<span class="navbar-toggler-icon"></span>-->
+    <!--</button>-->
+
+    <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+        <!--<ul class="nav navbar-nav navbar-right">-->
+
+
+            <!--<li><a href="/cartview"><i class="fa fa-shopping-cart" aria-hidden="true" ></i> Shopping Cart<span class="badge">{{session.cart.totalqty}}-->
+                <!--</span> <br> </a></li>-->
+            <!--<li> <br></li>-->
+            <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User Management <span class="caret"></span></a>-->
+                <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href='/signin'>CUSTOMER LOGIN</a></li>-->
+                    <!--<a href='/signup'>CUSTOMER SignUP</a></li>-->
+                    <!--<li role="separator" class="divider"></li>-->
+                    <!--<li><a href="/signin">ADMIN LOGIN</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</nav>-->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="sumit kumar">
+    <title>Trial</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
+</head>
+
+<body>
+<!--=========-TOP_BAR============-->
+<nav class="topBar">
+    <div class="container">
+        <ul class="list-inline pull-left hidden-sm hidden-xs">
+            <li><span class="text-primary">Have a question? </span> Call +120 558 7885</li>
+        </ul>
+        <ul class="topBarNav pull-right">
+            <!--<li class="dropdown">-->
+                <a href="/" class=" button   mx-auto" style="width: 500px ; padding: 20px" data-close-others="false">HOME </a>
+
+            <a href="/" class="button" data-close-others="false">  SHOP</a>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-2"></i><span class="hidden-xs">My Account<i class="fa fa-angle-down ml-5"></i></span> </a>
+                <ul class="dropdown-menu w-150" role="menu">
+                    <li><a href='/signin'>Login</a>
+                    </li>
+                    <li><a href='/signup'>Create Account</a>
+                    </li>
+
+                    <li><a href="/cartview">My Cart</a>
+                    </li>
+                    <li><a href='/check'>Checkout</a>
+                    </li>
+                </ul>
+            </li>
+            <a href="/cartview" class=" button   mx-auto" style="width: 500px ; padding: 20px" data-close-others="false">Cart {{session.cart.totalqty}} </a>
+            <a href='/check' class=" button   mx-auto" style="width: 500px ; padding: 20px" data-close-others="false">CheckOut </a>
+
+        </ul>
+    </div>
+</nav><!--=========-TOP_BAR============-->
+
+<!--=========MIDDEL-TOP_BAR============-->
+
+<div class="middleBar">
+    <div class="container">
+        <div class="row display-table">
+            <div class="col-sm-3 vertical-align text-left hidden-xs">
+                <a href="javascript:void(0);"> <img width="" src="https://lh3.googleusercontent.com/-r0Fhzz-so14/WNf9-4M65JI/AAAAAAAAD3E/ht6IhlL9gG4ujE2Hqiq70U3jBb6KQmaAQCL0B/w180-d-h43-p-rw/logo-2.png" alt=""></a>
+            </div>
+            <!-- end col -->
+            <div class="col-sm-7 vertical-align text-center">
+                <form>
+                    <div class="row grid-space-1">
+                        <div class="col-sm-6">
+                            <input type="text" name="keyword" class="form-control input-lg" placeholder="Search">
+                        </div>
+                        <!-- end col -->
+
+                        <!-- end col -->
+                        <div class="col-sm-3">
+                            <input type="submit" class="btn btn-default btn-block btn-lg" value="Search">
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </form>
+            </div>
+            <!-- end col -->
+            <div class="col-sm-2 vertical-align header-items hidden-xs">
+                <div class="header-item mr-5">
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Wishlist"> <i class="fa fa-heart-o"></i> <sub>32</sub> </a>
+                </div>
+                <div class="header-item">
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare"> <i class="fa fa-refresh"></i> <sub>2</sub> </a>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end  row -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    ! function($, n, e) {
+        var o = $();
+        $.fn.dropdownHover = function(e) {
+            return "ontouchstart" in document ? this : (o = o.add(this.parent()), this.each(function() {
+                function t(e) {
+                    o.find(":focus").blur(), h.instantlyCloseOthers === !0 && o.removeClass("open"), n.clearTimeout(c), i.addClass("open"), r.trigger(a)
+                }
+                var r = $(this),
+                        i = r.parent(),
+                        d = {
+                            delay: 100,
+                            instantlyCloseOthers: !0
+                        },
+                        s = {
+                            delay: $(this).data("delay"),
+                            instantlyCloseOthers: $(this).data("close-others")
+                        },
+                        a = "show.bs.dropdown",
+                        u = "hide.bs.dropdown",
+                        h = $.extend(!0, {}, d, e, s),
+                        c;
+                i.hover(function(n) {
+                    return i.hasClass("open") || r.is(n.target) ? void t(n) : !0
+                }, function() {
+                    c = n.setTimeout(function() {
+                        i.removeClass("open"), r.trigger(u)
+                    }, h.delay)
+                }), r.hover(function(n) {
+                    return i.hasClass("open") || i.is(n.target) ? void t(n) : !0
+                }), i.find(".dropdown-submenu").each(function() {
+                    var e = $(this),
+                            o;
+                    e.hover(function() {
+                        n.clearTimeout(o), e.children(".dropdown-menu").show(), e.siblings().children(".dropdown-menu").hide()
+                    }, function() {
+                        var t = e.children(".dropdown-menu");
+                        o = n.setTimeout(function() {
+                            t.hide()
+                        }, h.delay)
+                    })
+                })
+            }))
+        }, $(document).ready(function() {
+            $('[data-hover="dropdown"]').dropdownHover()
+        })
+    }(jQuery, this);
+</script>
+</body>
+
+</html>

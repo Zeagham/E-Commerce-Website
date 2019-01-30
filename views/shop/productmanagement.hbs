@@ -1,0 +1,87 @@
+
+<!--<div class="container">-->
+    <!--<a href="/add" class="btn btn-success pull-right" role="button">Add New Products</a>-->
+    <!--<br>-->
+    <!--<br>-->
+
+    <!--{{# each products}}-->
+
+        <!--<div class="row">-->
+            <!--<div class="col-sm-6 col-md-4">-->
+                <!--<div class="thumbnail">-->
+                    <!--<img src="{{this.imagepath}}" alt="..." class="img-responsive">-->
+                    <!--<div class="caption">-->
+                        <!--<h3>Thumbnail label</h3>-->
+                        <!--<p class="description">{{this.description}}</p>-->
+                        <!--<div class="clearfix">-->
+                            <!--<div class="price pull-left">{{this.price}}</div>-->
+                            <!--<a href="/update/{{this.id}}" class="btn btn-success pull-right" role="button">Update</a>-->
+                            <!--<a href="/delete/{{this.id}}" class="btn btn-success pull-right" role="button">Delete</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+        <!--</div>-->
+    <!--{{/each}}-->
+<!--</div>-->
+<!--<br>-->
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <h2> Product Management Panel </h2>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <div class="row">
+                            {{# each products}}
+
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="https://image.ibb.co/g0CAPp/ipad.jpg" class="img-responsive img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>{{this.description}}</h4>
+                                            <p class="item-price"> <span>${{this.price}}</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a href="/update/{{this.id}}" class="btn btn-primary">Update</a>
+                                            <a href="/delete/{{this.id}}" class="btn btn-primary">Delete</a>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

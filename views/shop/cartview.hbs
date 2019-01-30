@@ -1,0 +1,27 @@
+
+
+<div class="container">
+    {{# each cartproduct}}
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+
+                    <div class="caption">
+                        <h3>Name of Item: {{this.item.title}}</h3>
+                        <p class="description">Price of Item:  ${{this.price}}</p>
+                        <p class="description">Quantity of Item: {{this.qty}}</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    {{/each}}
+    <div class="clearfix">
+        <div class="price pull-left">Total :  ${{totalprice}}</div>
+        <br>
+        <a href="/check" class="btn btn-success pull-right" role="button">CheckOut</a>
+    </div>
+
+</div>
+<br>
